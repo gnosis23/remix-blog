@@ -1,0 +1,43 @@
+body, h1, h2, h3 { margin: 0; padding: 0; }
+
+.main {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+@media (min-width: 800px) {
+    .main {
+        width: 640px;
+    }
+}
+
+.main article > .date {
+    color: #666;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main article > .title {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.75rem;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    padding: 20px 0;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 20px;
+    color: #0098df;
+    line-height: 30px;
+    border-bottom: 1px solid #0098dfa0;
+}
+
+.articleTitle {
+    font-size: 40px;
+}
+.articleDate {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 1em;
+}
