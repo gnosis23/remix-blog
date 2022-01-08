@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'remix';
 
-interface LayoutProps {
-  highlight: boolean;
+export interface LayoutProps {
+  highlight?: boolean;
   children: any;
 }
 
 export default function Layout(props: LayoutProps) {
-  const { highlight, children } = props;
+  const { highlight = false, children } = props;
   return (
     <div>
       <div className="relative py-6 w-full px-4 min-h-screen main">
@@ -19,8 +19,8 @@ export default function Layout(props: LayoutProps) {
           )}
           <div className="space-x-6 my-2">
             <Link to="/">资源</Link>
-            <Link to="trend">趋势</Link>
-            <Link to="about">关于我</Link>
+            <Link to="/trend">趋势</Link>
+            <Link to="/about">关于我</Link>
           </div>
         </div>
         {children}

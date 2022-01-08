@@ -1,10 +1,10 @@
-export type Post = {
+export interface Post {
   no: string;
   url: string;
   title: string;
   description?: string;
   date: string;
-};
+}
 
 const getArticles = (data: { body: string }[]) => {
   let rawTextList: string[] = [];

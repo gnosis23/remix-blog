@@ -4,17 +4,21 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration
+  ScrollRestoration,
 } from "remix";
 import type { MetaFunction } from "remix";
-import styles from "./tailwind.css";
+import tailwindStyles from "./tailwind.css";
+import styles from "~/styles/index.css";
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: "Bohao Blog" };
 };
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }]
+  return [
+    { rel: "stylesheet", href: tailwindStyles },
+    { rel: "stylesheet", href: styles }
+  ]
 }
 
 export default function App() {
